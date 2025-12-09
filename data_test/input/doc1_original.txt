@@ -1,0 +1,5 @@
+﻿Công nghệ thông tin đang phát triển rất mạnh mẽ trong những năm gần đây tại Việt Nam và trên toàn thế giới. 
+Việc ứng dụng trí tuệ nhân tạo, học máy và dữ liệu lớn đã thay đổi hoàn toàn cách chúng ta sống và làm việc. 
+Các trường đại học tại Việt Nam hiện nay đang đẩy mạnh đào tạo ngành công nghệ thông tin để đáp ứng nhu cầu nhân lực chất lượng cao. 
+Sinh viên ngành này cần nắm vững các kỹ năng lập trình, thuật toán và cấu trúc dữ liệu. 
+Việt Nam hiện có nhiều công ty công nghệ lớn như FPT, Viettel, VNG đang tuyển dụng hàng nghìn kỹ sư mỗi năm.

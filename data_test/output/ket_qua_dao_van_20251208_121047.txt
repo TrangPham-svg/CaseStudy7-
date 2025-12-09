@@ -1,0 +1,64 @@
+BÁO CÁO KẾT QUẢ PHÁT HIỆN ĐẠO VĂN
+Thời gian: 08/12/2025 12:10:47
+Số tài liệu: 4
+================================================================================
+
+## KẾT QUẢ SO SÁNH: doc1_original.txt vs doc2_plagiarized_90.txt
+| Chiến lược | Độ Tương Đồng | Độ Phức Tạp | Chỉ Số Metric | Thời Gian |
+|---|---|---|---|---|
+| Quy hoạch động (Levenshtein) | 58.20% | O(m*n) | Distance: 51 | 0.0044s |
+| Chia để trị (Shingling + Jaccard) | 3.10% | O(m + n) | Shingle k=5 | 0.0000s |
+| Vét cạn (Longest Exact Substring) | 5.04% | O(m*n) | Max Len: 6 | 0.0010s |
+
+
+
+## KẾT QUẢ SO SÁNH: doc1_original.txt vs doc3_plagiarized_50.txt
+| Chiến lược | Độ Tương Đồng | Độ Phức Tạp | Chỉ Số Metric | Thời Gian |
+|---|---|---|---|---|
+| Quy hoạch động (Levenshtein) | 21.85% | O(m*n) | Distance: 93 | 0.0020s |
+| Chia để trị (Shingling + Jaccard) | 0.51% | O(m + n) | Shingle k=5 | 0.0000s |
+| Vét cạn (Longest Exact Substring) | 5.88% | O(m*n) | Max Len: 5 | 0.0011s |
+
+
+
+## KẾT QUẢ SO SÁNH: doc1_original.txt vs doc4_different.txt
+| Chiến lược | Độ Tương Đồng | Độ Phức Tạp | Chỉ Số Metric | Thời Gian |
+|---|---|---|---|---|
+| Quy hoạch động (Levenshtein) | 6.72% | O(m*n) | Distance: 111 | 0.0023s |
+| Chia để trị (Shingling + Jaccard) | 0.00% | O(m + n) | Shingle k=5 | 0.0000s |
+| Vét cạn (Longest Exact Substring) | 3.39% | O(m*n) | Max Len: 2 | 0.0000s |
+
+
+
+## KẾT QUẢ SO SÁNH: doc2_plagiarized_90.txt vs doc3_plagiarized_50.txt
+| Chiến lược | Độ Tương Đồng | Độ Phức Tạp | Chỉ Số Metric | Thời Gian |
+|---|---|---|---|---|
+| Quy hoạch động (Levenshtein) | 18.85% | O(m*n) | Distance: 99 | 0.0021s |
+| Chia để trị (Shingling + Jaccard) | 0.51% | O(m + n) | Shingle k=5 | 0.0000s |
+| Vét cạn (Longest Exact Substring) | 5.88% | O(m*n) | Max Len: 5 | 0.0011s |
+
+
+
+## KẾT QUẢ SO SÁNH: doc2_plagiarized_90.txt vs doc4_different.txt
+| Chiến lược | Độ Tương Đồng | Độ Phức Tạp | Chỉ Số Metric | Thời Gian |
+|---|---|---|---|---|
+| Quy hoạch động (Levenshtein) | 4.92% | O(m*n) | Distance: 116 | 0.0025s |
+| Chia để trị (Shingling + Jaccard) | 0.00% | O(m + n) | Shingle k=5 | 0.0000s |
+| Vét cạn (Longest Exact Substring) | 3.39% | O(m*n) | Max Len: 2 | 0.0000s |
+
+
+
+## KẾT QUẢ SO SÁNH: doc3_plagiarized_50.txt vs doc4_different.txt
+| Chiến lược | Độ Tương Đồng | Độ Phức Tạp | Chỉ Số Metric | Thời Gian |
+|---|---|---|---|---|
+| Quy hoạch động (Levenshtein) | 5.88% | O(m*n) | Distance: 80 | 0.0010s |
+| Chia để trị (Shingling + Jaccard) | 0.00% | O(m + n) | Shingle k=5 | 0.0000s |
+| Vét cạn (Longest Exact Substring) | 3.39% | O(m*n) | Max Len: 2 | 0.0000s |
+
+
+
+## PHÂN TÍCH ƯU NHƯỢC ĐIỂM
+- Quy hoạch động: Ưu: Chính xác cao, xử lý thay đổi nhỏ tốt; Nhược: Chậm cho văn bản dài (O(m*n)).
+- Chia để trị: Ưu: Nhanh, hiệu quả cho dữ liệu lớn; Nhược: Có thể bỏ lỡ similarity tinh tế.
+- Vét cạn: Ưu: Đơn giản, tìm chuỗi con chính xác; Nhược: Không scale tốt cho văn bản rất dài.
+Kết luận: Chọn Shingling cho tốc độ, Levenshtein cho độ chính xác cao nhất.

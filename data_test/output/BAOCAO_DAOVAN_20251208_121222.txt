@@ -1,0 +1,40 @@
+BÁO CÁO KẾT QUẢ PHÁT HIỆN ĐẠO VĂN
+Thời gian chạy: 08/12/2025 lúc 12:12:22
+Số tài liệu: 4
+================================================================================
+
+### doc1_original.txt ↔ doc2_plagiarized_90.txt
+- Quy hoạch động: `58.20%`
+- Shingling + Jaccard: `3.10%`
+- Longest Exact Substring: `5.04%`
+**Kết luận**: CÓ DẤU HIỆU ĐẠO VĂO VĂN
+
+### doc1_original.txt ↔ doc3_plagiarized_50.txt
+- Quy hoạch động: `21.85%`
+- Shingling + Jaccard: `0.51%`
+- Longest Exact Substring: `5.88%`
+**Kết luận**: KHÔNG ĐẠO VĂN
+
+### doc1_original.txt ↔ doc4_different.txt
+- Quy hoạch động: `6.72%`
+- Shingling + Jaccard: `0.00%`
+- Longest Exact Substring: `3.39%`
+**Kết luận**: KHÔNG ĐẠO VĂN
+
+### doc2_plagiarized_90.txt ↔ doc3_plagiarized_50.txt
+- Quy hoạch động: `18.85%`
+- Shingling + Jaccard: `0.51%`
+- Longest Exact Substring: `5.88%`
+**Kết luận**: KHÔNG ĐẠO VĂN
+
+### doc2_plagiarized_90.txt ↔ doc4_different.txt
+- Quy hoạch động: `4.92%`
+- Shingling + Jaccard: `0.00%`
+- Longest Exact Substring: `3.39%`
+**Kết luận**: KHÔNG ĐẠO VĂN
+
+### doc3_plagiarized_50.txt ↔ doc4_different.txt
+- Quy hoạch động: `5.88%`
+- Shingling + Jaccard: `0.00%`
+- Longest Exact Substring: `3.39%`
+**Kết luận**: KHÔNG ĐẠO VĂN
