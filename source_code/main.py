@@ -127,8 +127,8 @@ def main():
         # Ghi vào file Markdown
         all_results.append(f"### {pair_name}")
         all_results.append(f"- Quy hoạch động: `{result['levenshtein']:.2f}%`")
-        all_results.append(f"- Shingling + Jaccard: `{result['shingling']:.2f}%`")
-        all_results.append(f"- Longest Exact Substring: `{result['substring']:.2f}%`")
+        all_results.append(f"- Chia để trị (Shingling + Jaccard): `{result['shingling']:.2f}%`")
+        all_results.append(f"- Vét cạn (Longest Exact Substring): `{result['substring']:.2f}%`")
         all_results.append(f"**Kết luận**: {result['conclusion']}")
         all_results.append("")
 
