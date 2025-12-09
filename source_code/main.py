@@ -1,8 +1,3 @@
-﻿# ======================================================
-# main.py - PHIÊN BẢN HOÀN HẢO NHẤT CHO CASE STUDY 7
-# Phát hiện đạo văn + TỰ ĐỘNG KẾT LUẬN + ĐẸP CONSOLE + XUẤT FILE
-# ======================================================
-
 import os
 import time
 from datetime import datetime
@@ -144,10 +139,9 @@ def main():
         f.write("\n".join(all_results))
 
     print("\n" + "="*80)
-    print(f"HOÀN TẤT 100%!")
+    print(f"HOÀN TẤT")
     print(f"Đã lưu báo cáo chi tiết tại:")
     print(f"   → {output_file}")
-    print("Chỉ cần nộp file này + ảnh chụp console là chắc chắn 10 điểm!")
     print("="*80)
 
 if __name__ == "__main__":
